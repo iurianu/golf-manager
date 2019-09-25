@@ -1,0 +1,747 @@
+
+/* MEMBERSHIP PAGE STYLES */
+
+*, *::before, *::after {
+	-webkit-transition: all 0.3s ease-in 0.1s;
+		 -moz-transition: all 0.3s ease-in 0.1s;
+			-ms-transition: all 0.3s ease-in 0.1s;
+			 -o-transition: all 0.3s ease-in 0.1s;
+					transition: all 0.3s ease-in 0.1s;
+}
+
+main, [role="main"] {
+	border: 1px solid #e2e1e1;
+	padding: 20px 20px 100px 20px;
+}
+
+h1{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000;
+}
+
+p.description {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #000;
+	line-height: 1.5;
+}
+
+div#packagesWrapper {
+	width: 100%;
+	height: 472px; /* for large screens, to fix autoheight with overflow */
+	margin-top: 75px;
+	-webkit-border-radius: 10px;
+	 -moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		 -o-border-radius: 10px;
+				border-radius: 10px;
+	background-color: #cbcbcb;
+	background: -webkit-linear-gradient(#a2a2a2, #696969 74px, #cbcbcb 75px, #cbcbcb 100%);
+	background: 	 -moz-linear-gradient(#a2a2a2, #696969 74px, #cbcbcb 75px, #cbcbcb 100%);
+	background: 		-ms-linear-gradient(#a2a2a2, #696969 74px, #cbcbcb 75px, #cbcbcb 100%);
+	background: 		 -o-linear-gradient(#a2a2a2, #696969 74px, #cbcbcb 75px, #cbcbcb 100%);
+	background: 				linear-gradient(#a2a2a2, #696969 74px, #cbcbcb 75px, #cbcbcb 100%);
+	overflow: visible;
+}
+
+div#packagesWrapper > section {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+#packagesWrapper > section.recommanded {
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+		 -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+			-ms-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+			 -o-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+					box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+	z-index: 101;
+}
+
+#packagesWrapper > section.recommanded {
+	border: 1px solid #4a4a4a;
+}
+
+#packagesWrapper > section.recommanded:hover {
+	border: none;
+}
+
+section.package{
+	position: relative;
+	background-color: #e0e0e0;
+	/* border radius for container too, because it has a background color set */
+	-webkit-border-top-left-radius: 10px;
+		-moz-border-top-left-radius: 10px;
+		-ms-border-top-left-radius: 10px;
+		 -o-border-top-left-radius: 10px;
+				border-top-left-radius: 10px;
+
+	-webkit-border-top-right-radius: 10px;
+		-moz-border-top-right-radius: 10px;
+		-ms-border-top-right-radius: 10px;
+		 -o-border-top-right-radius: 10px;
+				border-top-right-radius: 10px;
+}
+
+section.previous-package{
+	-webkit-border-top-right-radius: 0px;
+		-moz-border-top-right-radius: 0px;
+		-ms-border-top-right-radius: 0px;
+		 -o-border-top-right-radius: 0px;
+				border-top-right-radius: 0px;
+}
+
+section.next-package{
+	-webkit-border-top-left-radius: 0px;
+		-moz-border-top-left-radius: 0px;
+		-ms-border-top-left-radius: 0px;
+		 -o-border-top-left-radius: 0px;
+				border-top-left-radius: 0px;
+}
+
+
+/**************PACKAGE section HEADER***************/
+
+div#packagesWrapper > section > header {
+	width: 100%;
+	height: 74px;
+}
+
+#features > header {
+	padding-top: 10px !important;
+	font-family: Arial, sans-serif;
+	font-size: 23px;
+	font-weight: bold;
+	color: #e0e0e0;
+	line-height: 1.2;
+	text-shadow: 1px 1px 2px rgba(146, 146, 146, 0.5);
+	background: url('../images/features-header-bg.jpg') repeat-x;
+}
+
+section.package > header {
+	position: relative;
+	top: 0;
+	background: url(../images/package-header.png) repeat-x;
+	background: -webkit-linear-gradient(#22538b, #4a76a3);
+	background: 	 -moz-linear-gradient(#22538b, #4a76a3);
+	background: 		-ms-linear-gradient(#22538b, #4a76a3);
+	background: 		 -o-linear-gradient(#22538b, #4a76a3);
+	background: 				linear-gradient(#22538b, #4a76a3);
+	padding-top: 5px;
+	z-index: 100; /* for the gradient background opacity trick */
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-ms-border-top-left-radius: 10px;
+	 -o-border-top-left-radius: 10px;
+			border-top-left-radius: 10px;
+
+	-webkit-border-top-right-radius: 10px;
+		-moz-border-top-right-radius: 10px;
+		-ms-border-top-right-radius: 10px;
+		 -o-border-top-right-radius: 10px;
+				border-top-right-radius: 10px;
+}
+
+section.previous-package > header{
+	-webkit-border-top-right-radius: 0px;
+		-moz-border-top-right-radius: 0px;
+		-ms-border-top-right-radius: 0px;
+		 -o-border-top-right-radius: 0px;
+				border-top-right-radius: 0px;
+}
+
+section.next-package > header {
+	-webkit-border-top-left-radius: 0px;
+		-moz-border-top-left-radius: 0px;
+		-ms-border-top-left-radius: 0px;
+		 -o-border-top-left-radius: 0px;
+				border-top-left-radius: 0px;
+}
+
+/* gradient background transition fix */
+section.package > header::before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	top: 0;
+	left: 0;
+	z-index: -100;
+	opacity: 0;
+	background: url(../images/package-header-recommanded.png) repeat-x;
+	/*
+	background: -webkit-linear-gradient(#5cb243, #1b7410);
+	background: 	 -moz-linear-gradient(#5cb243, #1b7410);
+	background: 		-ms-linear-gradient(#5cb243, #1b7410);
+	background: 		 -o-linear-gradient(#5cb243, #1b7410);
+	background: 				linear-gradient(#5cb243, #1b7410);
+	*/
+	background: -webkit-linear-gradient(#5cb243, #1b7410 74px, #ffffff 75px, #ffffff 100%);
+	background: 	 -moz-linear-gradient(#5cb243, #1b7410 74px, #ffffff 75px, #ffffff 100%);
+	background: 		-ms-linear-gradient(#5cb243, #1b7410 74px, #ffffff 75px, #ffffff 100%);
+	background: 		 -o-linear-gradient(#5cb243, #1b7410 74px, #ffffff 75px, #ffffff 100%);
+	background: 				linear-gradient(#5cb243, #1b7410 74px, #ffffff 75px, #ffffff 100%);
+
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-ms-border-top-left-radius: 10px;
+	 -o-border-top-left-radius: 10px;
+			border-top-left-radius: 10px;
+
+	-webkit-border-top-right-radius: 10px;
+		-moz-border-top-right-radius: 10px;
+		-ms-border-top-right-radius: 10px;
+		 -o-border-top-right-radius: 10px;
+				border-top-right-radius: 10px;
+}
+
+section.package > header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 74px;
+    width: 0;
+    height: 0;
+    border-left: 107px solid transparent;
+    border-right: 108px solid transparent;
+    border-top: 0px solid #4a76a3;
+}
+
+section.package > header > h2 {
+	font-family: Arial, sans-serif;
+	font-size: 46px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+
+section.package > header h2 span.name {
+	font-size: 22px;
+	display: block;
+}
+
+section.package > header h2 span.price {
+	position: relative;
+}
+
+section.package > header h2 span.price sup {
+	vertical-align: top;
+	font-size: 28px;
+}
+
+section.package > header h2 span.price sub {
+	font-size: 16px;
+}
+
+/**************eo PACKAGE section HEADER***************/
+
+
+
+/**************PACKAGE section CONTENT***************/
+
+ul.option-select {
+	list-style-type: none;
+}
+
+ul.option-select > li.offers {
+	display: block;
+	width: 100%;
+	height: 44px;
+	border-bottom: 1px solid #ffffff;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	color: #464646;
+	line-height: 44px;
+	list-style-type: none;
+}
+
+section#features ul.option-select > li.offers  {
+	border-bottom: 1px solid #a2a2a2;
+}
+
+img.check {
+	width: auto;
+	height: 14px;
+}
+
+/* first package section with shadow */
+#silver::before {
+	width: 20px;
+	height: 398px;
+	position: absolute;
+	content:'';
+	left: -20px;
+	top: 74px;
+	background: -webkit-linear-gradient(to right, rgba(138,138,138,0.2), rgba(0,0,0,0.2));
+	background: 	 -moz-linear-gradient(to right, rgba(138,138,138,0.2), rgba(0,0,0,0.2));
+	background: 		-ms-linear-gradient(to right, rgba(138,138,138,0.2), rgba(0,0,0,0.2));
+	background: 		 -o-linear-gradient(to right, rgba(138,138,138,0.2), rgba(0,0,0,0.2));
+	background: 				linear-gradient(to right, rgba(138,138,138,0.2), rgba(0,0,0,0.2));
+}
+
+/**************eo PACKAGE section CONTENT***************/
+
+
+
+/**************PACKAGE section FOOTER***************/
+
+div#packagesWrapper > section > footer {
+	width: 100%;
+	height: 90px;
+	overflow: auto; /* sign up button has a margin-top: 30px, which collapses on the footer container */
+}
+
+section#features > footer {
+	padding-top: 22px;
+}
+
+section.package > footer .sign-up-button {
+	width: 152px;
+	height: 38px;
+	margin: 30px auto 0 auto;
+
+	background: url(../images/sign-up-button.png) no-repeat;
+	background: -webkit-radial-gradient(#4d4d4d, #515151);
+	background: 	 -moz-radial-gradient(#4d4d4d, #515151);
+	background: 		-ms-radial-gradient(#4d4d4d, #515151);
+	background: 		 -o-radial-gradient(#4d4d4d, #515151);
+	background: 				radial-gradient(#4d4d4d, #515151);
+
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+		 -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+			-ms-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+			 -o-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+					box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+
+	-webkit-border-radius: 20px;
+		 -moz-border-radius: 20px;
+			-ms-border-radius: 20px;
+			 -o-border-radius: 20px;
+					border-radius: 20px;
+
+	cursor: pointer;
+
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 38px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/**************eo PACKAGE section FOOTER***************/
+
+
+
+/************** HOVER BEHAVIOR *****************/
+
+section.package:hover {
+	background-color: #fff;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+		 -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+			-ms-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+			 -o-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+					box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+	z-index: 1000;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	-ms-border-bottom-left-radius: 10px;
+		-o-border-bottom-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+
+	-webkit-border-bottom-right-radius: 10px;
+		-moz-border-bottom-right-radius: 10px;
+		-ms-border-bottom-right-radius: 10px;
+		 -o-border-bottom-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+}
+
+section.package:hover > header {
+	top: -22px;
+	padding-top: 10px;
+	background: url(../images/package-header-recommanded.png) repeat-x;
+	height: 96px !important;
+}
+
+section.package:hover > header::before {
+	opacity: 1;
+}
+
+section.package:hover > header::after {
+    border-top: 22px solid #1b7410;
+}
+
+section.package:hover > ul.option-select {
+	/*margin-top: 20px;*/
+	position: relative;
+	top: -22px;
+}
+
+section.package:hover > ul.option-select > li.offers {
+	border-bottom: 1px solid #dadada;
+}
+
+div#packagesWrapper > section.package:hover > footer {
+	height: 103px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	-ms-border-bottom-left-radius: 10px;
+		-o-border-bottom-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+
+	-webkit-border-bottom-right-radius: 10px;
+		-moz-border-bottom-right-radius: 10px;
+		-ms-border-bottom-right-radius: 10px;
+		 -o-border-bottom-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+}
+
+section.package:hover  > footer > .sign-up-button {
+	background: url(../images/sign-up-button-hover.png) no-repeat;
+	background: -webkit-radial-gradient(#fc4124, #a64438);
+	background: 	 -moz-radial-gradient(#fc4124, #a64438);
+	background: 		-ms-radial-gradient(#fc4124, #a64438);
+	background: 		 -o-radial-gradient(#fc4124, #a64438);
+	background: 				radial-gradient(#fc4124, #a64438);
+}
+
+/************** eo HOVER BEHAVIOR *****************/
+
+ul#packageControl {
+	display: none;
+}
+
+
+
+@media screen and (min-width: 767px){
+	#features > header {
+		background: none;
+	}
+
+	section.package:hover > header {
+		height: 74px !important;
+	}
+
+	section.package:hover > header {
+		background: -webkit-linear-gradient(#5cb243, #1b7410);
+		background: 	 -moz-linear-gradient(#5cb243, #1b7410);
+		background: 		-ms-linear-gradient(#5cb243, #1b7410);
+		background: 		 -o-linear-gradient(#5cb243, #1b7410);
+		background: 				linear-gradient(#5cb243, #1b7410);
+	}
+
+	section.package:hover > ul.option-select {
+		top: 0px;
+	}
+
+	#packagesWrapper > section.recommanded {
+		border: none;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+	#features > header {
+		background: none;
+	}
+
+	div#packagesWrapper {
+		position: relative;
+		max-width: 860px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div#packagesWrapper > section {
+    position: absolute;
+		float: none;
+    width: 215px;
+	}
+
+	#features {
+		left: 0;
+	}
+
+	#silver {
+		left: 215px;
+	}
+
+	#gold {
+		left: calc(430px - (860px - 100%) / 2);
+	}
+
+	#premium {
+		left: calc(645px - (2 * (860px - 100%) / 2));
+	}
+
+	#packagesWrapper > section.recommanded {
+		border: none;
+	}
+}
+
+@media screen and (max-width: 767px){
+
+	/*** POSITIONING and WIDTH *****/
+
+	div#packagesWrapper {
+		position: relative;
+		max-width: 680px;
+		height: 392px;
+    margin-top: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		background: -webkit-linear-gradient(#a2a2a2, #696969 60px, #cbcbcb 61px, #cbcbcb 100%);
+		background: 	 -moz-linear-gradient(#a2a2a2, #696969 60px, #cbcbcb 61px, #cbcbcb 100%);
+		background: 		-ms-linear-gradient(#a2a2a2, #696969 60px, #cbcbcb 61px, #cbcbcb 100%);
+		background: 		 -o-linear-gradient(#a2a2a2, #696969 60px, #cbcbcb 61px, #cbcbcb 100%);
+		background: 				linear-gradient(#a2a2a2, #696969 60px, #cbcbcb 61px, #cbcbcb 100%);
+	}
+
+	div#packagesWrapper > section {
+    position: absolute;
+		float: none;
+    width: 170px;
+	}
+
+	#features {
+		left: 0;
+	}
+
+	#silver {
+		left: 170px;
+	}
+
+	#gold {
+		left: calc(340px - (680px - 100%) / 2);
+	}
+
+	#premium {
+		left: calc(510px - (2 * (680px - 100%) / 2));
+	}
+
+	section.package:hover > ul.option-select {
+		top: 0px;
+	}
+
+	#packagesWrapper > section.recommanded {
+		border: none;
+	}
+
+	#features > header {
+		background: none;
+	}
+	/*** eo POSITIONING and WIDTH *****/
+
+
+
+	/******* HEADER styles **********/
+
+	div#packagesWrapper > section > header {
+		height: 60px;
+	}
+
+	section.package:hover > header {
+		height: 60px !important;
+	}
+
+	section.package > header::before {
+		background: -webkit-linear-gradient(#5cb243, #1b7410);
+		background: 	 -moz-linear-gradient(#5cb243, #1b7410);
+		background: 		-ms-linear-gradient(#5cb243, #1b7410);
+		background: 		 -o-linear-gradient(#5cb243, #1b7410);
+		background: 				linear-gradient(#5cb243, #1b7410);
+	}
+
+	#features > header {
+    font-size: 18px;
+		text-align: left;
+		padding-left: 15px;
+	}
+
+	section.package > header > h2 {
+    font-size: 36px;
+	}
+
+	section.package > header h2 span.name {
+		font-size: 18px;
+	}
+
+	section.package > header::after {
+    top: 60px;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+	}
+
+	section.package:hover > header::after {
+    border-top: 20px solid #1b7410;
+	}
+
+	/******* eo HEADER styles **********/
+
+
+
+	/******* PACKAGE CONTENT ***********/
+
+	section#features ul.option-select > li.offers {
+		text-align: left;
+		padding-left: 15px;
+	}
+
+	ul.option-select > li.offers {
+		height: 36px;
+		font-size: 13px;
+		line-height: 36px;
+	}
+
+	#silver::before {
+    height: 332px;
+    top: 60px;
+	}
+
+	/******* eo PACKAGE CONTENT ***********/
+
+
+
+	/******* PACKAGE FOOTER styles ******************/
+
+	div#packagesWrapper > section > footer {
+    height: 80px;
+	}
+
+	section#features > footer {
+		text-align: left;
+		padding-left: 15px;
+		padding-top: 17px;
+	}
+
+	section.package > footer .sign-up-button {
+    width: 140px;
+		margin-top: 25px;
+	}
+
+	/******* PACKAGE FOOTER styles ******************/
+}
+
+
+
+@media screen and (max-width: 479px){
+
+	main,[role="main"] {
+    padding: 10px 10px 100px 10px;
+	}
+
+	/*** POSITIONING and WIDTH *****/
+
+	div#packagesWrapper {
+		width: 300px;
+	}
+
+	div#packagesWrapper > section {
+    position: absolute;
+		float: left;
+    width: 150px;
+	}
+
+	#features {
+		left: 0;
+	}
+
+	#silver::before {
+		content: none;
+	}
+
+	#silver, #gold , #premium  {
+		left: 150px;
+	}
+
+	#silver, #premium  {
+		display: none;
+	}
+
+	/*** eo POSITIONING and WIDTH *****/
+
+
+
+	/******* HEADER styles **********/
+
+	#features > header {
+    font-size: 18px;
+		text-align: left;
+		padding-left: 15px;
+	}
+
+	section.package > header {
+		padding-top: 7px;
+	}
+
+	section.package:hover > header {
+		height: 60px !important;
+	}
+
+	section.package > header::before {
+		background: -webkit-linear-gradient(#5cb243, #1b7410);
+		background: 	 -moz-linear-gradient(#5cb243, #1b7410);
+		background: 		-ms-linear-gradient(#5cb243, #1b7410);
+		background: 		 -o-linear-gradient(#5cb243, #1b7410);
+		background: 				linear-gradient(#5cb243, #1b7410);
+	}
+
+	section.package > header > h2 {
+    font-size: 34px;
+	}
+
+	section.package > header h2 span.name {
+		font-size: 15px;
+	}
+
+	section.package > header::after {
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+	}
+
+	/******* eo HEADER styles **********/
+
+
+
+	/******* PACKAGE FOOTER styles ******************/
+
+	section.package > footer .sign-up-button {
+    width: 130px;
+		margin-top: 20px;
+	}
+
+	/******* PACKAGE FOOTER styles ******************/
+
+
+
+	ul#packageControl {
+		display: block;
+		position: relative;
+		width: 100px;
+		left: calc(50% + 25px);
+		margin-top: 40px;
+	}
+
+	ul#packageControl li {
+		display: inline-block;
+		background: radial-gradient(#22538b, #4a76a3);
+		width: 20px;
+		height: 20px;
+		margin: 0 5px;
+		border: 1px solid #dadada;
+		border-radius: 15px;
+		cursor:	pointer;
+	}
+
+	ul#packageControl li.selected, ul#packageControl li:hover {
+			background: radial-gradient(#5cb243, #1b7410);
+	}
+}

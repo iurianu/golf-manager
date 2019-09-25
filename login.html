@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Proiect Iulian Andriescu</title>
+
+<!-- SEO PAGE DESCRIPTION -->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" >
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="author" content="Iulian Andriescu" />
+	<meta name="description" content="Golf Manager - Tournaments Page" />
+	<meta name="keywords" content="golf manager, html5/css3, proiect" />
+	<meta name="robots" content="noindex nofollow">
+	
+	<script src="js/css3-mediaqueries.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<!-- CSS RESET -->
+
+	<link rel="stylesheet" type="text/css" media="all" href="css/html5-css-reset.css" />
+
+<!-- CASCADE STYLE SHEETS -->
+
+	<link rel="stylesheet" type="text/css" href="css/style-general.css">
+ 	<link rel="stylesheet" type="text/css" href="css/style-login.css">
+  	<link rel="stylesheet" type="text/css" href="css/jquery.modal.css">
+
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+
+<!-- HEADER START -->
+
+	<header id="pageHeader">
+		<div id="navTop" role="navigation">
+			<div class="container">
+				<ul id="optionTop" itemscope itemtype="https://www.schema.org/itemList">
+					<li itemprop="itemListElement"><a class="active" href="login.html">Login</a></li>
+					<li itemprop="itemListElement"><a href="javascript:void(0);">Partner Countries</a></li>
+				</ul>
+				<ul id="breadcrumbs">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div id="banner" class="container">
+			<img class="logo" src="images/logo.png" alt="logo">
+		</div>
+		<nav id="mainNavigation" class="container clearfix mobile-menu-off" role="navigation">
+			<ul itemscope itemtype="https://www.schema.org/BreacrumbList">
+				<li itemprop="itemListElement"><a href="index.html">Home</a></li>
+				<li class="has-submenu">
+					<a href="#">About GM </a>
+					<ul>
+						<li itemprop="itemListElement"><a href="javascript:void(0);">Team</a></li>
+						<li itemprop="itemListElement"><a href="javascript:void(0);">Events</a></li>
+						<li itemprop="itemListElement"><a href="testimonials.html">Testimonials</a></li>
+						<li itemprop="itemListElement"><a href="javascript:void(0);">Contact</a></li>
+					</ul>
+				</li>
+				<li itemprop="itemListElement"><a href="tournaments.html">Tournaments</a></li>
+				<li itemprop="itemListElement"><a href="membership.html">Membership</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!-- /HEADER END -->
+
+<!-- MAIN CONTENT START -->
+
+	<main class="container clearfix" role="main" itemprop="mainContentOfPage">
+
+		<div id="signInSection" class="user-box active">
+			<section id="socialLoginBox">
+				<button id="fbLogin" class="social-login" title="Login with Facebook"><span>Login with Facebook</span></button>
+				<button id="twLogin" class="social-login" title="Login with Twitter"><span>Login with Twitter</span></button>
+				<button id="ggLogin" class="social-login" title="Login with Google +"><span>Login with Google +</span></button>
+			</section>
+			<section id="signInBox">
+				<form action="javascript:void(0)">
+					<fieldset>
+						<h3>Sign in manually:</h3>
+						<br />
+						<label for="username">Username</label>
+						<input type="text" name="username" placeholder="Username or email" />
+						<br />
+						<label for="password">Password</label>
+						<input type="password" name="password" placeholder="Password" />
+						<br /><br />
+						<input type="checkbox" name="remember" value="Remember" />Remember me
+						<input type="submit" value="Submit" />
+					</fieldset>
+				</form>
+				<br />
+				<a href="javascript:void(0)" id="registerNow">Register now</a>
+				<a href="#passRecovery" rel="modal:open" id="forgotPassword">Forgot password?</a>
+			</section>
+		</div>
+
+		<div id="signUpSection" class="user-box inactive">
+
+			<h3>Sign up:</h3>
+			<hr />
+			<form id="signUpForm" action="javascript:void(0)">
+				<fieldset class="left-side">
+					<label for="fname">First name</label>
+					<input type="text" name="fname" placeholder="First Name" />
+					<br />
+					<label for="lname">Last Name</label>
+					<input type="text" name="lname" placeholder="Last Name" />
+					<br />
+					<label for="email">Email</label>
+					<input type="email" name="email" placeholder="Email Address" />
+					<br />
+					<label for="phone">Phone</label>
+					<input type="tel" name="phone" placeholder="Phone Number" />
+					<br />
+				</fieldset>
+				<fieldset class="right-side">
+					<label for="country">Country</label>
+					<select name="country">
+						<option value="">Select your country</option>
+						<option value="UK">UK</option>
+						<option value="USA">USA</option>
+						<option value="Romania">Romania</option>
+						<option value="Germany">Germany</option>
+					</select>
+					<br />
+					<label for="city">City</label>
+					<input type="text" name="city" placeholder="Home City" />
+					<br />
+					<label for="address">Address line 1</label>
+					<input type="text" name="address" placeholder="Home Address" />
+					<br />
+					<label for="address2">Address line 2</label>
+					<input type="text" name="address2" placeholder="Home Address" />
+					<br />
+					<br />
+				</fieldset>
+				<input type="submit" value="Submit" />
+				Already have an account? <a href="javascript:void(0)" id="signIn">Sign in</a>
+			</form>
+
+		</div>
+
+	</main>
+
+<!-- /MAIN CONTENT END -->
+
+<!-- FOOTER START -->
+
+	<footer id="pageFooter" class="clearfix">
+		<div class="container clearfix">
+
+			<div>
+				<p>All rights reserved 2012</p>
+				<div id="footerLogo">
+					<img src="images/player.png" alt="Golf Manager" />
+					<h3>Golf Manager</h3>
+				</div>
+			</div>
+
+			<div>
+				<h4>Membership</h4>
+				<ul class="list-related">
+					<li><a href="javascript:void(0)">Individual</a></li>
+					<li><a href="javascript:void(0)">Society</a></li>
+					<li><a href="javascript:void(0)">Golf Clubs</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Tournaments</h4>
+				<ul class="list-related">
+					<li><a href="javascript:void(0)">Events</a></li>
+					<li><a href="javascript:void(0)">Sign Up</a></li>
+					<li><a href="javascript:void(0)">Corporate Days</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>E-Magazine</h4>
+				<ul class="list-related">
+					<li><a href="javascript:void(0)">Tournament News</a></li>
+					<li><a href="javascript:void(0)">Travel Offers</a></li>
+					<li><a href="javascript:void(0)">Advertising</a></li>
+					<li><a href="javascript:void(0)">Newsletter</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</footer>
+
+<!-- /FOOTER END -->
+
+	<div id="passRecovery" style="display:none;">
+		<form>
+			<fieldset>
+				<h3>Password reset:</h3>
+				<p>Please insert your email address in the box below and we will transmit a new password to you.</p>
+					<br /><br />
+				<input type="email" name="email" placeholder="Email address" />
+					<br /><br />
+				<input type="submit" value="Submit" />
+			</fieldset>
+
+		</form>
+	</div>
+
+<!-- SCRIPTS -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	//$.noConflict();
+		$(document).ready(function(){
+			$("#registerNow").click(function(){
+				$('#signUpSection').removeClass("inactive").addClass("active");
+				$('#signInSection').removeClass("active").addClass("inactive");
+			});
+
+			$("#signIn").click(function(){
+				$('#signInSection').removeClass("inactive").addClass("active");
+				$('#signUpSection').removeClass("active").addClass("inactive");
+			});
+
+			$('#breadcrumbs').click(function() {
+				$('#mainNavigation').toggleClass('mobile-menu-off');
+			});
+		});
+	</script>
+
+<!-- /SCRIPTS -->
+
+</body>
+</html>

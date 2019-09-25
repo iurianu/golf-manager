@@ -1,0 +1,66 @@
+
+/*
+h1 {
+	padding: 15px 25px;
+	font-family: AvantGardeCEBook, Times, serif;
+	font-size: 25px;
+	font-weight: 800;
+	color: #555;
+}
+*/
+
+blockquote {
+	width: 100%;
+	border-top: 3px solid #eee;
+}
+
+.testimonial {
+	padding: 20px;
+	clear: both;
+	overflow: auto;
+}
+
+.testimonial p.comment {
+	margin-right: 35px;
+	padding: 0px 20px 20px;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	font-style: italic;
+	color: #000;
+	line-height: 1.5;
+}
+
+.author {
+	float: right;
+	margin-right: 35px;
+	color: #555;
+}
+
+.comment-author {
+	font-family: AvantGardeCEBook, Times, serif;
+	font-size: 20px;
+	color: #a2a2a2;
+}
+
+.testimonial time {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+}
+
+
+@media screen and (max-width: 767px){
+	.testimonial {
+			padding: 20px 0;
+	}
+	.testimonial p.comment {
+    margin-right: 0;
+    padding: 0px 0px 20px 0px;
+	}
+	.author {
+    margin-right: 0;
+	}
+
+	.comment-author {
+    font-size: 18px;
+	}
+}

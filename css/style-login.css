@@ -1,0 +1,266 @@
+.user-box {
+	width: 710px;
+	overflow: auto;
+	background-color: #fff;
+	margin: 60px auto;
+	border: 2px solid #eee;
+	border-radius: 10px;
+	padding: 30px 0;
+}
+
+.user-box h3 {
+	padding-bottom: 0px;
+}
+
+#socialLoginBox {
+	float: left;
+	width: 50%;
+	padding: 0 30px;
+	border-right: 2px solid #eee;
+}
+
+.social-login {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: 35px 35px;
+	margin: 20px 0;
+	padding-left: 30px;
+	border-radius: 8px;
+	line-height: 2;
+	font-family: Calibri, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid gray;
+}
+
+.social-login:active {
+	top: 1px;
+}
+
+#fbLogin {
+	background-color: #4a6ea9;
+	background-image: url("../images/facebook-icon.png");
+}
+
+#twLogin {
+	background-color: #2aaae0;
+	background-image: url("../images/twitter-icon.png");
+}
+
+#ggLogin {
+	background-color: #dd4b39;
+	background-image: url("../images/google-icon-red.png");
+}
+
+#signInBox {
+	float: left;
+	width: 50%;
+	padding: 0 30px;
+	font-family: Calibri, sans-serif;
+	font-size: 18px;
+	color: #9daeb5;
+}
+
+fieldset > legend {
+	font-size: 20px;
+	color: #b5b5b5;
+	font-weight: bold;
+}
+
+input[type='text'], input[type='password'], input[type='tel'], input[type='email'], select {
+	width: 100%;
+	height: 50px;
+	background-color: #eee;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	font-family: Calibri, sans-serif;
+	font-size: 18px;
+	color: #9daeb5;
+	border: 1px solid gray;
+}
+
+input[type='submit'] {
+	position: relative;
+	float: right;
+	width: 100px;
+	height: 32px;
+	margin-top: -5px;
+	margin-right: 0;
+	background: #252525;
+	background: rgba(0, 0, 0, 0) linear-gradient(#5a5a5a, #252525) repeat scroll 0 0;
+	border: 1px inset #252525;
+	padding-bottom: 3px;
+	border-radius: 15px;
+	color: #fff;
+	cursor: pointer;
+	font-family: Calibri, sans-serif;
+	font-size: 18px;
+	line-height: 1;
+	outline: none;
+}
+
+input[type='submit']:active {
+	top: 1px;
+}
+
+h5 {
+	font-size: 20px;
+	color: #b5b5b5;
+	padding-bottom: 5px;
+}
+
+hr {
+	background-color: #b5b5b5;
+	width: 100%;
+	height: 1px;
+	margin-bottom: 20px;
+}
+
+#registerNow {
+	float: left;
+	padding-right: 10px;
+	font-size: 18px;
+}
+
+#signIn {
+	font-size: 18px;
+}
+
+#forgotPassword {
+	float: left;
+	padding-left: 10px;
+	border-left: 1px solid #b5b5b5;
+	font-size: 18px;
+	color: #b5b5b5;
+}
+
+.inactive {
+	display: none;
+}
+
+#signUpSection {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#signUpForm {
+	font-family: Calibri, sans-serif;
+	font-size: 18px;
+	color: #9daeb5;
+}
+
+#signUpForm fieldset {
+	float: left;
+	width: 50%;
+}
+
+#signUpForm fieldset.left-side{
+	padding-right: 15px;
+}
+
+#signUpForm fieldset:first-of-type{
+	padding-right: 15px;
+}
+
+#signUpForm fieldset.right-side{
+	padding-left: 15px;
+}
+
+#signUpForm fieldset:last-of-type{
+	padding-left: 15px;
+}
+
+fieldset label {
+	display: block;
+	padding-bottom: 10px;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	color: #555;
+}
+
+#signUpForm > select > option {
+	color: #000;
+}
+
+#passRecovery p {
+	padding-top: 10px;
+	font-size: 16px;
+}
+
+#passRecovery input[type='submit'] {
+	margin-right: 0px;
+}
+
+@media screen and (max-width: 767px){
+	main, [role="main"] {
+    padding-left: 20px;
+    padding-right: 20px;
+	}
+	.user-box {
+		width: 100%;
+	}
+
+	#socialLoginBox {
+		width: 110px;
+	}
+
+	.social-login {
+		background-position: center center;
+	}
+
+	.social-login > span {
+		display: none;
+	}
+
+	#signInBox {
+    width: calc(100% - 110px);
+    padding: 0 30px;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    color: #9daeb5;
+	}
+
+	#signUpForm fieldset {
+		float: none;
+		width: 100%;
+		padding-left: 0px !important;
+    padding-right: 0px !important;
+	}
+}
+
+@media screen and (max-width: 479px){
+	main, [role="main"] {
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+	.user-box {
+		width: 100%;
+	}
+
+	#socialLoginBox {
+		float: none;
+		width: 220px;
+		margin: 0 auto;
+		padding: 0;
+		border: none !important;
+	}
+
+	.social-login {
+		background-position: center center;
+		width: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#signInBox {
+		width: 100%;
+    padding: 0 15px;
+	}
+}

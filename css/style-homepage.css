@@ -1,0 +1,597 @@
+
+/* HOME PAGE STYLES */
+
+
+main, [role="main"] {
+	overflow: hidden;
+	padding: 0;
+}
+
+/* 1. OUTLINE: text + carousel */
+
+#clubOutline {
+	width: 100%;
+	background-color: #e8e8e8;
+	padding: 25px;
+	display: table;
+}
+
+#outlineText {
+	display: table-cell;
+	width: 50%;
+	padding-right: 25px;
+	border-right: 1px ridge #d5d5d5;
+}
+
+#outlineText > h1 {
+	padding-top: 15px;
+	font-family: AvantGardeCEBook, 'Myriad Pro', serif;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 51px;
+	color: #888;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#outlineText > p {
+	padding-bottom: 20px;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #444444;
+}
+
+button#register {
+	float: right;
+	width: 215px;
+	height: 38px;
+	background-color: #4096ee;
+	margin-right: 10px;
+	border: 1px solid #71aae6;
+	-webkit-border-radius: 10px;
+		 -moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+					border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 2px #1575d8;
+		 -moz-box-shadow: 0px 3px 2px #1575d8;
+			-ms-box-shadow: 0px 3px 2px #1575d8;
+			 -o-box-shadow: 0px 3px 2px #1575d8;
+					box-shadow: 0px 3px 2px #1575d8;
+	font-family: Calibri, Arial, serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.5em;
+	cursor: pointer;
+	outline: none;
+}
+
+button#register:active {
+	position: relative;
+	top: 2px;
+}
+
+/* Image Slider Styles */
+
+#carousel {
+	display: table-cell;
+	width: 50%;
+	border-left: 2px solid #fff;
+}
+
+#slider {
+	position: relative;
+	width: 370px;
+	height: 235px;
+	margin: 50px auto 20px auto;
+	display: table;
+}
+
+ul.images li {
+	position: absolute;
+	width: 340px;
+	-webkit-transition: none;
+ -moz-transition: none;
+	-ms-transition: none;
+	 -o-transition: none;
+			transition: none;
+}
+
+ul.images li.active { left: 0px; top: 0px; z-index: 2; opacity: 1; }
+ul.images li img.active { border-color: #000000; }
+
+ul.images li.second-layer { left: 15px; top: -15px; z-index: 1; opacity: 0.75; }
+ul.images li img.second-layer { border-color: #ffffff; }
+
+ul.images li.third-layer { left: 30px; top: -30px; z-index: 0; opacity: 0.5;  }
+ul.images li img.third-layer { border-color: #ffffff; }
+
+.images > li > img {
+	width: 100%;
+	height: auto;
+	border-width: 6px;
+	border-style: solid;
+}
+
+/* Carousel Indicators Styles */
+
+ul.triggers {
+	display: table;
+	width: 96px;
+	margin: 0 auto;
+}
+
+ul.triggers li {
+	float: left;
+	background: #dadada;
+  background: 	-webkit-linear-gradient(left top, #dadada 30%, #fff);
+  background:  -moz-linear-gradient(bottom right, #dadada 30%, #fff);
+  background: 	 -o-linear-gradient(bottom right, #dadada 30%, #fff);
+  background: 	 linear-gradient(to bottom right, #dadada 30%, #fff);
+	margin: 0 5px;
+	padding: 10px;
+  border: 1px solid #dadada;
+  border-radius: 15px;
+  cursor:	pointer;
+}
+
+ul.triggers li.active {
+	background: #d8b540;
+  background: 	-webkit-linear-gradient(left top, #d8b540 30%, #f5d159);
+  background:  -moz-linear-gradient(bottom right, #d8b540 30%, #f5d159);
+  background: 	 -o-linear-gradient(bottom right, #d8b540 30%, #f5d159);
+  background: 	 linear-gradient(to bottom right, #d8b540 30%, #f5d159);
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+	#outlineText {
+		width: auto;
+	}
+
+	#outlineText h1 {
+		font-size: 36px;
+	}
+
+	#outlineText p {
+		line-height: 20px;
+	}
+
+	#carousel {
+		width: 395px;
+		padding-left: 25px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#outlineText {
+		width: 100%;
+		display: block;
+		border: none;
+		padding-right: 0;
+	}
+
+	#outlineText h1 {
+		font-size: 36px;
+		padding-top: 0;
+		line-height: 1.2em;
+	}
+
+	#outlineText p {
+		line-height: 20px;
+	}
+
+	button#register {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+
+	#carousel {
+		width: 100%;
+		display: block;
+		padding-left: 0px;
+		border: none;
+	}
+
+	#slider {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 479px){
+	#clubOutline {
+		padding: 15px 15px 25px 15px;
+	}
+
+	#outlineText h1 {
+		font-size: 32px;
+	}
+
+	#slider {
+		width: 100%;
+		height: 0;
+		padding-bottom: 66.47%;
+		margin-bottom: 10px;
+	}
+
+	ul.images li {
+		width: calc(100% - 30px);
+	}
+}
+/* eo 1. OUTLINE: text + carousel */
+
+
+
+/* 2. POST ITs section */
+#categories {
+	clear: right;
+	background-color: #fafafa;
+	padding: 20px;
+}
+
+#categories > div {
+	float: left;
+	width: 280px;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 10px;
+		 -moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+					border-radius: 10px;
+}
+
+.category-thumb {
+	float: left;
+	width: 105px;
+	margin-top: -23px;
+	margin-left: -6px;
+}
+
+#categories h1 {
+	float: left;
+	margin-top: 15px;
+	padding-left: 5px;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	color: #fffefe;
+	text-align: left;
+}
+
+#categories h1 > span {
+	font-size: 14px;
+	font-style: normal;
+	cursor: pointer;
+}
+
+#onlineRegister {
+	background-color: #99ca12;
+	background-image: url('../images/bg-lime.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+		 -moz-background-size: cover;
+			-ms-background-size: cover;
+			 -o-background-size: cover;
+					background-size: cover;
+	-webkit-box-shadow: 0px 5px 2px #99ca12;
+		 -moz-box-shadow: 0px 5px 2px #99ca12;
+			-ms-box-shadow: 0px 5px 2px #99ca12;
+			 -o-box-shadow: 0px 5px 2px #99ca12;
+					box-shadow: 0px 5px 2px #99ca12;
+}
+
+#onlineRegister h1 > span {color: #638400;}
+
+#golfClubs {
+	background-color: #126ec0;
+	background-image: url('../images/bg-blue.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+		 -moz-background-size: cover;
+			-ms-background-size: cover;
+			 -o-background-size: cover;
+					background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg-blue.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg-blue.png', sizingMethod='scale')";
+  -webkit-box-shadow: 0px 5px 2px #136ec0;
+		 -moz-box-shadow: 0px 5px 2px #136ec0;
+			-ms-box-shadow: 0px 5px 2px #136ec0;
+			 -o-box-shadow: 0px 5px 2px #136ec0;
+					box-shadow: 0px 5px 2px #136ec0;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+
+#golfClubs > h1{margin-top: 25px;}
+#golfClubs > h1 > span {color: #05478c;}
+
+#bookTeeTime {
+	background-color: #d25a02;
+	background-image: url('../images/bg-orange.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+		 -moz-background-size: cover;
+			-ms-background-size: cover;
+			 -o-background-size: cover;
+					background-size: cover;
+  -webkit-box-shadow: 0px 5px 2px #d25a02;
+		 -moz-box-shadow: 0px 5px 2px #d25a02;
+			-ms-box-shadow: 0px 5px 2px #d25a02;
+			 -o-box-shadow: 0px 5px 2px #d25a02;
+					box-shadow: 0px 5px 2px #d25a02;
+}
+
+#bookTeeTime h1 > span { color: #b04100; }
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+	#categories > div {
+		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+
+	#bookTeeTime {
+		margin-left: 27.5% !important;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#categories > div {
+		width: 280px;
+		margin: 20px auto 50px auto;
+		float: none;
+	}
+
+	#categories > div:last-of-type {
+		margin-bottom: 20px;
+	}
+}
+/* eo 2. POST ITs section */
+
+
+
+/* 3. TOURNAMENTS */
+section#programme {
+	clear: both;
+	background-color: #fafafa;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e2e1e1;
+}
+
+#programme > h2 {
+	clear: both;
+	background-color: transparent;
+	background-image: url('../images/header-bg.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+		 -moz-background-size: contain;
+			-ms-background-size: contain;
+			 -o-background-size: contain;
+					background-size: contain;
+	width: 274px;
+	height: 44px;
+	margin-left: -10px;
+	margin-bottom: -14px;
+	padding-left: 30px;
+	line-height: 1.5;
+	font-weight: normal;
+}
+
+#programme > article {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	float: left;
+	width: 50%;
+}
+
+.thumbnail {
+	float: left;
+	width: 164px;
+	height: 108px;
+}
+
+#programme > article > p {
+	margin-left: 174px;
+	color: #555;
+	line-height: 1.5;
+	display: block;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+	#programme > article {
+		float: none;
+		width: 100%;
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 479px){
+	#programme > article {
+		float: none;
+		width: 100%;
+		overflow: auto;
+	}
+
+	#programme > article .thumbnail {
+		float: none;
+		margin-bottom: 10px;
+	}
+
+	#programme > article > p {
+		margin-left: 0;
+	}
+}
+/* eo 3. TOURNAMENTS */
+
+
+
+
+/* 4. INFOBAR */
+#infoBar {
+	clear: both;
+	display: flex;
+	max-width: 100%;
+	background-color: #fafafa;
+	padding: 25px 20px 30px;
+}
+
+#infoBar > a {
+	display: inline-flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	border-left: 1px solid #d7d7d7;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+
+#infoBar a:first-of-type {
+	padding-left: 0px;
+	border: none;
+}
+
+#infoBar a section {
+	display: block;
+}
+
+#infoBar h4 {
+	display: flex;
+	padding-top: 10px;
+	color: #343434;
+	font-weight: normal;
+}
+
+#infoBar p {
+	display: block;
+	padding-top: 10px;
+	padding-right: 20px;
+	font-family: Arial, serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #343434;
+}
+
+@media (min-width: 768px) {
+
+}
+
+.glyph {
+	float: left;
+	width: 45px;
+	height: 45px;
+	-webkit-background-size: cover;
+		 -moz-background-size: cover;
+			-ms-background-size: cover;
+			 -o-background-size: cover;
+					background-size: cover;
+					background-size: 100% 100%;
+	margin: 20px 0px;
+	margin-right: 15px;
+}
+
+#glyphVideos{
+	background: url('../images/glyph-videos-4.png');
+}
+
+#glyphPhotos {
+	background-image: url('../images/glyph-photos-1.png');
+}
+
+#glyphNews{
+	background-image: url('../images/glyph-rss-1.png');
+}
+
+#glyphSchool {
+	background-image: url('../images/glyph-school-1.png');
+}
+
+#infoBar a:hover > h4,
+#infoBar a:focus > h4 {
+	color: #4096ee;
+	text-decoration: none;
+}
+
+#videos:hover > #glyphVideos {
+	background: url('../images/glyph-videos-5.png') center center;
+}
+
+#photos:hover > #glyphPhotos {
+	background-image: url('../images/glyph-photos-2.png');
+}
+
+#news:hover > #glyphNews {
+	background-image: url('../images/glyph-rss-2.png');
+}
+
+#school:hover > #glyphSchool {
+	background-image: url('../images/glyph-school-3.png');
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+	#infoBar > a {
+		padding-left: 10px;
+	}
+
+	#infoBar > a h4 {
+		font-size: 16px;
+	}
+
+	#infoBar > a p {
+		padding-right: 10px;
+	}
+
+	.glyph {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#infoBar {
+		padding-bottom: 25px;
+	}
+
+	#infoBar > a  {
+		width: 50%;
+		border: none;
+	}
+
+	#videos {
+		padding-left: 10px !important;
+	}
+
+	#news, #school {
+		padding-bottom: 0px !important;
+	}
+}
+
+@media screen and (max-width: 479px){
+	#infoBar{
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	#infoBar > a {
+		padding-bottom: 30px;
+	}
+
+	.glyph {
+		float: none;
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#infoBar h4 {
+		padding-top: 0;
+	}
+}
+/* eo 4. INFOBAR */

@@ -1,0 +1,45 @@
+
+.event-item {
+	padding: 20px;
+	clear: both;
+	overflow: auto;
+}
+
+.thumbnail {
+	float: left;
+	height: 108px;
+	width: 164px;
+	margin-right: 20px;
+}
+
+.event-description {
+	line-height: 1.5;
+}
+
+.event-description > p {
+	color: #555;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	 -o-transition: none;
+			transition: none;
+}
+
+.event-description > a {
+	color: #4096ee;
+}
+
+.hidden {
+	display: none;
+}
+
+@media screen and (max-width: 479px){
+	.thumbnail {
+		float: none;
+		margin-bottom: 10px;
+	}
+
+	.event-item {
+		padding: 20px 0;
+	}
+}

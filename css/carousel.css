@@ -1,0 +1,73 @@
+
+/* STYLES FOR CAROUSEL */
+
+/* Image Slider Styles */
+
+#slider {
+	position:relative;
+	top: 50px;
+	left: 40px;
+	height: 340px;
+	list-style: none;
+}
+
+ul.images li {
+	position:absolute;
+	width: 342px;
+	height: 234px;
+	border: 6px solid #010101;
+}
+
+ul.images li:nth-child(1) {
+	top: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 1;
+}
+
+ul.images li:nth-child(2) {
+	top: -10px;
+	left: 10px;
+	z-index: 1;
+	opacity: 0.75;
+}
+
+ul.images li:nth-child(3) {
+	top: -20px;
+	left: 20px;
+	z-index: 0;
+	opacity: 0.5;
+}
+
+.images > li > img {
+	width: 100%;
+	height: auto;
+}
+
+/* Indicators Styles */
+
+ul.triggers {
+	position: absolute;
+	top: 97%;
+	left: 40%;
+}
+
+ul.triggers li {
+	float: left;
+  background: 	-webkit-linear-gradient(left top, #dadada 30%, #fff);
+  background:  -moz-linear-gradient(bottom right, #dadada 30%, #fff);
+  background: 	 -o-linear-gradient(bottom right, #dadada 30%, #fff);
+  background: 	 linear-gradient(to bottom right, #dadada 30%, #fff);
+	margin: 0 5px;
+	padding: 10px;
+  border: 1px solid #dadada;
+  border-radius: 15px;
+  cursor:	pointer;
+}
+
+ul.triggers li.active {
+  background: 	-webkit-linear-gradient(left top, #d8b540 30%, #f5d159);
+  background:  -moz-linear-gradient(bottom right, #d8b540 30%, #f5d159);
+  background: 	 -o-linear-gradient(bottom right, #d8b540 30%, #f5d159);
+  background: 	 linear-gradient(to bottom right, #d8b540 30%, #f5d159);
+}
