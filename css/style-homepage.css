@@ -126,6 +126,7 @@ ul.triggers {
 
 ul.triggers li {
 	float: left;
+	display: inline-table;
 	background: #dadada;
   background: 	-webkit-linear-gradient(left top, #dadada 30%, #fff);
   background:  -moz-linear-gradient(bottom right, #dadada 30%, #fff);
