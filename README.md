@@ -1,10 +1,12 @@
 
-### HTML5 Template (PSD to HTML) – Golf Manager Template
-###
+# HTML5 Template (PSD to HTML) – Golf Manager Template
 
-### Technologies used:
-###
-### HTML5/CSS3/Javascript
-### jQuery
+## Technologies used:
 
-### See the website online [here](http://iurianu.rocks/wp-content/uploads/projects/golf/index.html)
+> HTML5 Smeantic Markup
+> CSS3
+> Javascript / jQuery
+
+<hr />
+
+> See the website online [here](http://cdn.iurianu.rocks/golf-manager)!
