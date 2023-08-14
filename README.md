@@ -3,8 +3,8 @@
 
 ## Technologies used:
 
-> HTML5 Smeantic Markup
-> CSS3
+> HTML5 Semantic Markup <br />
+> CSS3 <br />
 > Javascript / jQuery
 
 <hr />
